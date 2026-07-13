@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #1a1a2e;
+  --secondary: #16213e;
+  --accent: #0f3460;
+  --highlight: #e94560;
+  --text: #333;
+  --text-light: #666;
+  --bg: #fff;
+  --bg-light: #f8f9fa;
+  --border: #e0e0e0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background: var(--bg);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.site-header {
+  background: var(--primary);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  height: 60px;
+}
+
+.site-logo {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: #fff;
+  border-bottom-color: var(--highlight);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.hero .subtitle-en {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--highlight);
+  display: inline-block;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.research-card {
+  background: var(--bg-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.research-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.research-card .card-title h3 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+}
+
+.research-card .card-title .subtitle {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.research-card p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+}
+
+.placeholder {
+  background: var(--bg-light);
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  padding: 3rem;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.pub-list {
+  list-style: none;
+}
+
+.pub-item {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-item:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.2rem;
+}
+
+.pub-venue {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-style: italic;
+}
+
+.pub-links {
+  margin-top: 0.5rem;
+}
+
+.pub-links a {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--highlight);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
+.about-content {
+  max-width: 700px;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.site-footer {
+  background: var(--primary);
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+}
+
+.footer-container p {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .site-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}

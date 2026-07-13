@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="header-container">
+    <a href="{{ '/' | relative_url }}" class="site-logo">
+      <span class="logo-text">TYUST-EmbodiedAI</span>
+    </a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>首页 Home</a>
+      <a href="{{ '/research' | relative_url }}" {% if page.url == '/research/' %}class="active"{% endif %}>研究 Research</a>
+      <a href="{{ '/publications' | relative_url }}" {% if page.url == '/publications/' %}class="active"{% endif %}>成果 Publications</a>
+      <a href="{{ '/about' | relative_url }}" {% if page.url == '/about/' %}class="active"{% endif %}>关于 About</a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,38 @@
+---
+layout: default
+title: 姿态估计
+---
+
+<h1 class="section-title">姿态估计 Pose Estimation</h1>
+
+<div class="about-content">
+  <p>面向机器人操作的人体与物体姿态估计研究。</p>
+  <p style="font-size: 0.9rem; color: var(--text-light);">Human and object pose estimation for robotic manipulation.</p>
+</div>
+
+<div class="section" style="margin-top: 2rem;">
+  <h2 style="font-size: 1.3rem; color: var(--primary); margin-bottom: 1rem;">开源项目 Projects</h2>
+
+  {% assign pose = site.data.research.directions | where: "title_en", "Pose Estimation" | first %}
+  {% if pose.projects.size > 0 %}
+  <div class="research-grid">
+    {% for project in pose.projects %}
+    <div class="research-card">
+      <div class="card-title">
+        <h3><a href="{{ project.url }}" target="_blank" style="color: var(--highlight); text-decoration: none;">{{ project.name }}</a></h3>
+      </div>
+      <p>{{ project.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="placeholder">
+    <p>项目开源中，敬请期待</p>
+    <p style="font-size: 0.85rem;">Projects coming soon.</p>
+  </div>
+  {% endif %}
+</div>
+
+<div style="margin-top: 2rem;">
+  <a href="{{ '/' | relative_url }}research" style="color: var(--highlight); text-decoration: none;">← 返回研究方向 Back to Research</a>
+</div>

@@ -1,0 +1,24 @@
+directions:
+  - title_en: "Tactile Sensing"
+    title_zh: "触觉感知"
+    description_en: "Research on tactile sensing and perception for intelligent robots."
+    description_zh: "智能机器人触觉感知与触觉交互研究。"
+    projects: []
+
+  - title_en: "Pose Estimation"
+    title_zh: "姿态估计"
+    description_en: "Human and object pose estimation for robotic manipulation."
+    description_zh: "人体与物体姿态估计研究。"
+    projects: []
+
+  - title_en: "Event Camera"
+    title_zh: "事件相机"
+    description_en: "Vision processing with event-based cameras for dynamic scenes."
+    description_zh: "基于事件相机的动态场景视觉处理研究。"
+    projects:
+      - name: "test1"
+        url: "https://github.com/hulihuitgit/TYUST-EmbodiedAI/tree/main/projects/event_camera/test1"
+        description: "P2PNet training test project."
+      - name: "test2"
+        url: "https://github.com/hulihuitgit/TYUST-EmbodiedAI/tree/main/projects/event_camera/test2"
+        description: "P2PNet training test project."

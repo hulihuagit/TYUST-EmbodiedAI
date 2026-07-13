@@ -1,0 +1,19 @@
+---
+layout: default
+title: 研究方向
+---
+
+<h1 class="section-title">研究方向 Research Directions</h1>
+
+<div class="research-grid">
+  {% for item in site.data.research.directions %}
+  <a href="{{ '/' | relative_url }}research/{{ item.title_en | downcase | replace: ' ', '-' }}" class="research-card" style="text-decoration: none; color: inherit;">
+    <div class="card-title">
+      <h3>{{ item.title_zh }}</h3>
+      <span class="subtitle">{{ item.title_en }}</span>
+    </div>
+    <p>{{ item.description_zh }}</p>
+    <p style="margin-top: 0.5rem; font-size: 0.85rem;">{{ item.description_en }}</p>
+  </a>
+  {% endfor %}
+</div>

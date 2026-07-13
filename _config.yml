@@ -1,0 +1,18 @@
+title: TYUST-EmbodiedAI
+description: "Embodied Intelligence Lab - 太原科技大学 具身智能实验室"
+url: "https://tyust-embodiedai.github.io"
+baseurl: ""
+
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+permalink: pretty
+
+defaults:
+  - scope:
+      path: "pages"
+    values:
+      layout: default
+
+lang: zh-CN
