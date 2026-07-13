@@ -16,12 +16,6 @@ directions:
     description_en: "Vision processing with event-based cameras for dynamic scenes."
     description_zh: "基于事件相机的动态场景视觉处理研究。"
     projects:
-      - name: "test1"
-        url: "https://github.com/hulihuagit/TYUST-EmbodiedAI/tree/main/projects/event_camera/test1"
-        description: "P2PNet training test project."
-      - name: "test2"
-        url: "https://github.com/hulihuagit/TYUST-EmbodiedAI/tree/main/projects/event_camera/test2"
-        description: "P2PNet training test project."
       - name: "CrowdCounting-P2PNet"
         url: "https://github.com/hulihuagit/TYUST-EmbodiedAI/tree/main/projects/event_camera/CrowdCounting-P2PNet-main"
         description: "基于P2PNet的人群计数项目"
