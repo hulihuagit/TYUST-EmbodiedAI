@@ -22,3 +22,6 @@ directions:
       - name: "test2"
         url: "https://github.com/hulihuitgit/TYUST-EmbodiedAI/tree/main/projects/event_camera/test2"
         description: "P2PNet training test project."
+      - name: "CrowdCounting-P2PNet"
+        url: "https://github.com/hulihuagit/TYUST-EmbodiedAI/tree/main/projects/event_camera/CrowdCounting-P2PNet"
+        description: "基于P2PNet的人群计数项目"
