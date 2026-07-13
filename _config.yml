@@ -1,7 +1,7 @@
 title: TYUST-EmbodiedAI
 description: "Embodied Intelligence Lab - 太原科技大学 具身智能实验室"
 url: "https://tyust-embodiedai.github.io"
-baseurl: ""
+baseurl: "/TYUST-EmbodiedAI"
 
 markdown: kramdown
 plugins:
