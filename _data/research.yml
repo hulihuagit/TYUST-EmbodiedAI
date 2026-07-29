@@ -16,6 +16,6 @@ directions:
     description_en: "Vision processing with event-based cameras for dynamic scenes."
     description_zh: "基于事件相机的动态场景视觉处理研究。"
     projects:
-      - name: "CrowdCounting-P2PNet"
-        url: "https://github.com/hulihuagit/TYUST-EmbodiedAI/tree/main/projects/event_camera/CrowdCounting-P2PNet-main"
-        description: "基于P2PNet的人群计数项目"
+      - name: "无人机追踪系统"
+        url: "https://github.com/hulihuagit/TYUST-EmbodiedAI/tree/main/projects/event_camera/UAV-Tracking-System"
+        homepage_description: "一套基于事件相机+时间表面表示的高速运动小目标检测与追踪软件平台。输入异步事件流 -> 时间表面转换 -> 多尺度检测 -> KCF+卡尔曼跟踪 -> 视频输出。支持模拟数据与FRED真实数据双模式，已封装为PySide6桌面应用。"

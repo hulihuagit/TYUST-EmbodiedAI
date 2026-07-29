@@ -1,0 +1,13 @@
+{
+  "tau_ms": 20,
+  "surface_type": "bipolar",
+  "min_area": 10,
+  "max_area": 300,
+  "flow_threshold": 0.5,
+  "top_k": 1,
+  "enable_multiscale": true,
+  "iou_threshold": 0.1,
+  "max_lost": 8,
+  "min_hits": 5,
+  "output_dir": "桌面"
+}

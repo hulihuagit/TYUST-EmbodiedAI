@@ -12,23 +12,29 @@ title: 首页
 
 <div class="section">
   <h2 class="section-title">研究方向 Research Directions</h2>
-  <div class="research-grid">
-    {% for item in site.data.research.directions %}
-    <a href="{{ '/' | relative_url }}research/{{ item.title_en | downcase | replace: ' ', '-' }}" class="research-card" style="text-decoration: none; color: inherit;">
-      <div class="card-title">
-        <h3>{{ item.title_zh }}</h3>
-        <span class="subtitle">{{ item.title_en }}</span>
-      </div>
-      <p>{{ item.description_zh }}</p>
-    </a>
-    {% endfor %}
-  </div>
-</div>
 
-<div class="section">
-  <h2 class="section-title">最新动态 News</h2>
-  <div class="placeholder">
-    <p>暂无最新动态</p>
-    <p style="font-size: 0.85rem;">No recent news yet.</p>
+  {% for dir in site.data.research.directions %}
+  <div class="direction-block">
+    <div class="direction-header">
+      <h3>{{ dir.title_zh }} <span style="font-weight: normal; font-size: 0.9rem; color: var(--text-light);">{{ dir.title_en }}</span></h3>
+      <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 0.3rem;">{{ dir.description_zh }}</p>
+    </div>
+
+    {% if dir.projects.size > 0 %}
+    <div class="project-list">
+      {% for project in dir.projects %}
+      <div class="project-item">
+        <div class="project-info">
+          <span class="project-icon">▸</span>
+          <a href="{{ project.url }}" target="_blank" class="project-name">{{ project.name }}</a>
+          <span class="project-desc">{{ project.homepage_description }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="project-empty">暂无项目，敬请期待 / Projects coming soon</div>
+    {% endif %}
   </div>
+  {% endfor %}
 </div>
