@@ -1,0 +1,91 @@
+---
+layout: default
+title: 无人机追踪系统 UAV Tracking System
+---
+
+<div class="page-header">
+  <h1>无人机追踪系统</h1>
+  <p class="subtitle">UAV Tracking System Based on Event Camera</p>
+</div>
+
+<div class="project-detail">
+  <div class="project-info">
+    <h2>项目简介</h2>
+    <p>一套基于事件相机+时间表面表示的高速运动小目标检测与追踪软件平台。</p>
+    
+    <h3>技术流程</h3>
+    <p>输入异步事件流 → 时间表面转换 → 多尺度检测 → KCF+卡尔曼跟踪 → 视频输出</p>
+    
+    <h3>功能特点</h3>
+    <ul>
+      <li>支持模拟数据与FRED真实数据双模式</li>
+      <li>已封装为PySide6桌面应用</li>
+      <li>可执行文件无需安装Python环境</li>
+    </ul>
+
+    <h2>下载</h2>
+    <div class="download-section">
+      <a href="https://github.com/hulihuagit/TYUST-EmbodiedAI/releases/download/v1.0/UAV-Tracking-System.exe" class="download-btn">
+        📥 下载可执行文件 (145MB)
+      </a>
+      <a href="https://github.com/hulihuagit/TYUST-EmbodiedAI/releases/download/v1.0/data.tar.gz" class="download-btn">
+        📥 下载测试数据 (428MB)
+      </a>
+    </div>
+
+    <h3>使用说明</h3>
+    <ol>
+      <li>下载 UAV-Tracking-System.exe</li>
+      <li>下载 data.tar.gz 并解压（使用 7-Zip 或 tar 命令）</li>
+      <li>运行 exe 文件</li>
+      <li>在界面中选择解压后的 data 文件夹中的视频进行测试</li>
+    </ol>
+
+    <h3>系统要求</h3>
+    <ul>
+      <li>Windows 10/11</li>
+      <li>无需安装 Python 环境（独立可执行文件）</li>
+    </ul>
+
+    <h2>源代码</h2>
+    <p>
+      <a href="https://github.com/hulihuagit/TYUST-EmbodiedAI/tree/main/projects/event_camera/UAV-Tracking-System">
+        📂 查看源代码 (GitHub)
+      </a>
+    </p>
+  </div>
+</div>
+
+<style>
+.download-section {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+.download-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.project-detail {
+  max-width: 800px;
+}
+.project-info h2 {
+  color: var(--primary);
+  margin-top: 2rem;
+}
+.project-info h3 {
+  color: var(--accent);
+  margin-top: 1.5rem;
+}
+</style>
