@@ -1,0 +1,10 @@
+本目录文件说明
+
+preprocess.py：磁场信号预处理程序；读取原始 CSV，进行通道选择、序列截取或补齐、归一化及标签解析，并生成模型训练所需的数据。
+文件说明.txt：本目录各文件的中文用途说明。
+
+输入目录：“二、原始磁触觉数据集”。
+输出目录：“九、处理后磁触觉数据集”。
+
+执行命令（Windows CMD，在项目总目录运行）：
+"八、运行环境与配置说明\运行环境\Scripts\python.exe" "四、磁场信号预处理程序\preprocess.py" --data_root "二、原始磁触觉数据集" --out_root "九、处理后磁触觉数据集" --keep_channels --seq_len 1024 --detrend --norm zscore --fs 1000

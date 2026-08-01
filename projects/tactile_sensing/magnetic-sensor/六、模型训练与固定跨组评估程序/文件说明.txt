@@ -1,0 +1,14 @@
+本目录文件说明
+
+train.py：公共训练与评估程序；包含一维卷积基准模型、训练循环、验证与测试、随机种子控制、分类指标和力值回归指标计算。
+compare_model_zoo.py：统一构建并比较论文主模型、深度学习对比模型和传统机器学习模型。
+compare_model_zoo_fixed_suffix_split.py：论文固定跨组划分实验入口；按文件名末尾组号划分训练集 01—12、验证集 13—14、测试集 15—20。
+aggregate_model_compare_results.py：汇总多次模型对比结果，计算平均值、标准差并合并混淆矩阵。
+plot_msginet_all_ablation_summary.py：读取消融实验结果，生成论文所需的消融汇总图和混淆矩阵图。
+文件说明.txt：本目录各文件的中文用途说明。
+
+执行命令（Windows CMD，在项目总目录运行）：
+1. 单独训练一维卷积基准模型：
+"八、运行环境与配置说明\运行环境\Scripts\python.exe" "六、模型训练与固定跨组评估程序\train.py" --data "九、处理后磁触觉数据集" --save "十、实验结果\一维卷积基准模型.pth" --epochs 60 --batch 32 --lr 1e-3 --seq_len 1024 --phy_weight 0.1 --phy_loss mae --task_mode multitask --train_suffixes 01 02 03 04 05 06 07 08 09 10 11 12 --val_suffixes 13 14 --test_suffixes 15 16 17 18 19 20
+2. 单独运行 MSGI-Net 固定跨组评估：
+"八、运行环境与配置说明\运行环境\Scripts\python.exe" "六、模型训练与固定跨组评估程序\compare_model_zoo_fixed_suffix_split.py" --data "九、处理后磁触觉数据集" --models msgi_net --channel_preset magnetic16 --epochs 60 --batch 32 --lr 1e-3 --task_mode multitask --phy_weight 0.1 --phy_loss mae --train_suffixes 01 02 03 04 05 06 07 08 09 10 11 12 --val_suffixes 13 14 --test_suffixes 15 16 17 18 19 20 --out_csv "十、实验结果\MSGI-Net固定跨组评估.csv"

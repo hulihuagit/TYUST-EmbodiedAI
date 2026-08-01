@@ -1,0 +1,22 @@
+{
+    "sample_frequency": 20.0,
+    "measurement_duration": 20,
+    "log_level": "DEBUG",
+    "sensor_settling_delay": 0.004,
+    "sensor_read_retries": 2,
+    "sensor_outlier_floor": 180.0,
+    "sensor_outlier_multiplier": 6.0,
+    "sensor_total_limit": 9000.0,
+    "temp_offsets": {
+        "0xc": 0.0,
+        "0xd": 0.0,
+        "0xe": 0.0,
+        "0xf": 0.0
+    },
+    "max_sample_frequency": 14.41360844110459,
+    "last_save_defaults": {
+        "category": "GlueStick",
+        "force": "40",
+        "index": 20
+    }
+}

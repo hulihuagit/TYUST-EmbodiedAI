@@ -1,0 +1,165 @@
+---
+layout: default
+title: 触觉摩擦检测 Friction Detection
+---
+
+<div class="project-page">
+  <div class="project-hero">
+    <h1>触觉摩擦检测</h1>
+    <p class="project-subtitle">Tactile Friction Detection using Deep Learning</p>
+    <div class="project-links">
+      <a href="https://github.com/hulihuagit/TYUST-EmbodiedAI/tree/main/projects/tactile_sensing/friction-detection/code" class="btn btn-primary">
+        📂 源代码 Source Code
+      </a>
+      <a href="https://github.com/hulihuagit/TYUST-EmbodiedAI/releases/download/friction-detection-v1.0/friction-detection-dataset.zip" class="btn btn-secondary">
+        📥 下载数据集 (23MB)
+      </a>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <div class="content-section">
+      <h2>项目简介</h2>
+      <p>基于深度学习的触觉摩擦检测研究，包含多种网络模型的对比实验。</p>
+    </div>
+
+    <div class="content-section">
+      <h2>模型结构</h2>
+      <div class="model-list">
+        <div class="model-item">
+          <h3>时频双支融合网络</h3>
+          <p>本研究提出的主要模型，融合时域和频域特征进行摩擦检测。</p>
+        </div>
+        <div class="model-item">
+          <h3>对比模型</h3>
+          <ul>
+            <li>KNN - K近邻算法</li>
+            <li>Liner - 线性分类器</li>
+            <li>ResNet - 残差网络</li>
+            <li>Transformer - 注意力机制模型</li>
+            <li>VGG - 视觉几何组网络</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>实验内容</h2>
+      <ul>
+        <li>各网络对比试验</li>
+        <li>消融实验</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>数据说明</h2>
+      <p>下载数据集后解压即可使用，包含触觉摩擦检测所需的训练和测试数据。</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.project-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--primary) 0%, #2a2a4a 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.project-hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+.project-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0 0 2rem 0;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background: white;
+  color: var(--primary);
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.project-content {
+  padding: 0 1rem;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.content-section h2 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.content-section ul, .content-section ol {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #444;
+}
+
+.model-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.model-item {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+}
+
+.model-item h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary);
+}
+</style>

@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+torch
+scikit-learn
+matplotlib
+seaborn
+nicegui
+plotly

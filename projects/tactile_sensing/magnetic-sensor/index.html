@@ -1,0 +1,195 @@
+---
+layout: default
+title: 磁触觉传感器 Magnetic Tactile Sensor
+---
+
+<div class="project-page">
+  <div class="project-hero">
+    <h1>磁触觉传感器</h1>
+    <p class="project-subtitle">Magnetic Tactile Sensor Classification Network</p>
+    <div class="project-links">
+      <a href="https://github.com/hulihuagit/TYUST-EmbodiedAI/tree/main/projects/tactile_sensing/magnetic-sensor" class="btn btn-primary">
+        📂 源代码 Source Code
+      </a>
+      <a href="https://github.com/hulihuagit/TYUST-EmbodiedAI/releases/download/magnetic-sensor-v1.0/magnetic-sensor-raw-dataset.zip" class="btn btn-secondary">
+        📥 下载原始数据集 (115MB)
+      </a>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <div class="content-section">
+      <h2>项目简介</h2>
+      <p>基于多尺度门控交互网络的磁触觉传感器分类研究，包含完整的数据采集、预处理、模型训练和评估流程。</p>
+    </div>
+
+    <div class="content-section">
+      <h2>目录结构</h2>
+      <div class="structure-list">
+        <div class="structure-item">
+          <h3>一、成果</h3>
+          <p>论文 PDF 及相关成果文件</p>
+        </div>
+        <div class="structure-item">
+          <h3>三、磁触觉数据采集程序</h3>
+          <p>四磁传感器采集程序、采集配置和 CH347 驱动库</p>
+        </div>
+        <div class="structure-item">
+          <h3>四、磁场信号预处理程序</h3>
+          <p>把原始 CSV 转换为模型训练所需的标准序列数据</p>
+        </div>
+        <div class="structure-item">
+          <h3>五、多尺度门控交互网络及对比模型</h3>
+          <p>主模型 MSGI-Net 及 TCN、LSTM、GRU、BiLSTM、Mamba-like、Transformer 等对比网络</p>
+        </div>
+        <div class="structure-item">
+          <h3>六、模型训练与固定跨组评估程序</h3>
+          <p>训练公共函数、固定跨组划分、模型比较结果汇总和消融图绘制程序</p>
+        </div>
+        <div class="structure-item">
+          <h3>七、模型对比与消融实验脚本</h3>
+          <p>论文表格和消融实验的批量运行入口</p>
+        </div>
+        <div class="structure-item">
+          <h3>八、运行环境与配置说明</h3>
+          <p>Python 依赖清单和环境使用说明</p>
+        </div>
+        <div class="structure-item">
+          <h3>十、实验结果</h3>
+          <p>模型对比、固定跨组评估、混淆矩阵和消融图的统一输出位置</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>网络模型</h2>
+      <ul>
+        <li><strong>MSGI-Net</strong> - 多尺度门控交互网络（主模型）</li>
+        <li>TCN - 时间卷积网络</li>
+        <li>LSTM - 长短期记忆网络</li>
+        <li>GRU - 门控循环单元</li>
+        <li>BiLSTM - 双向长短期记忆网络</li>
+        <li>Mamba-like - 状态空间模型</li>
+        <li>Transformer - 注意力机制模型</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>数据说明</h2>
+      <p>包含 11 类物体、不同加载力和不同采集组次的原始 CSV 数据。下载后解压即可使用。</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.project-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--primary) 0%, #2a2a4a 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.project-hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+.project-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0 0 2rem 0;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background: white;
+  color: var(--primary);
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.project-content {
+  padding: 0 1rem;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.content-section h2 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.content-section ul {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #444;
+}
+
+.structure-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.structure-item {
+  padding: 0.8rem 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid var(--accent);
+}
+
+.structure-item h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+.structure-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+</style>

@@ -1,0 +1,17 @@
+本目录文件说明
+
+requirements.txt：论文代码所需 Python 第三方库及版本清单。
+文件说明.txt：本目录各文件的中文用途和运行环境说明。
+
+建议在本目录创建名为“运行环境”的 Python 虚拟环境：
+py -m venv 运行环境
+运行环境\Scripts\python.exe -m pip install -r requirements.txt
+
+完成环境安装和数据预处理后，在项目总目录运行：
+& ".\八、运行环境与配置说明\运行环境\Scripts\python.exe" ".\四、磁场信号预处理程序\preprocess.py" --data_root ".\二、原始磁触觉数据集" --out_root ".\九、处理后磁触觉数据集" --keep_channels --seq_len 1024 --detrend --norm zscore --fs 1000
+powershell -ExecutionPolicy Bypass -File ".\七、模型对比与消融实验脚本\运行模型对比实验.ps1"
+powershell -ExecutionPolicy Bypass -File ".\七、模型对比与消融实验脚本\运行消融实验.ps1"
+
+环境安装命令（Windows CMD，在项目总目录运行）：
+py -m venv "八、运行环境与配置说明\运行环境"
+"八、运行环境与配置说明\运行环境\Scripts\python.exe" -m pip install -r "八、运行环境与配置说明\requirements.txt"
