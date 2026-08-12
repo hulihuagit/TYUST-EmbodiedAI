@@ -12,7 +12,7 @@ directions:
         homepage_description: "基于多尺度门控交互网络(MSGI-Net)的磁触觉传感器分类研究，包含数据采集、预处理、模型训练和评估的完整流程。"
       - name: "MambaVision触觉识别"
         url: "/TYUST-EmbodiedAI/projects/tactile_sensing/mambavision-tactile/"
-        homepage_description: "基于MambaVision的触觉物体识别研究，在Calandra、TAG、obj三个触觉数据集上进行对比实验。"
+        homepage_description: "基于MambaVision的触觉物体识别研究，在Calandra、TAG、ObjectFolder三个触觉数据集上进行对比实验。"
 
   - title_en: "Pose Estimation"
     title_zh: "姿态估计"
