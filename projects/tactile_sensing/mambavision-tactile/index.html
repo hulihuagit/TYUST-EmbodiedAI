@@ -1,0 +1,134 @@
+---
+layout: default
+title: MambaVision触觉识别 MambaVision Tactile Recognition
+---
+
+<div class="project-page">
+  <div class="project-hero">
+    <h1>MambaVision触觉识别</h1>
+    <p class="project-subtitle">Tactile Object Recognition using MambaVision</p>
+    <div class="project-links">
+      <a href="https://github.com/hulihuagit/TYUST-EmbodiedAI/tree/main/projects/tactile_sensing/mambavision-tactile" class="btn btn-primary">
+        📂 源代码 Source Code
+      </a>
+      <a href="https://pan.baidu.com/s/1h2CGqVUyBnSIP2jxkEkblA?pwd=f1k8" class="btn btn-secondary">
+        📥 下载数据集 (百度网盘)
+      </a>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <div class="content-section">
+      <h2>项目简介</h2>
+      <p>基于MambaVision的触觉物体识别研究，在Calandra、TAG、obj三个触觉数据集上进行实验。</p>
+    </div>
+
+    <div class="content-section">
+      <h2>技术特点</h2>
+      <ul>
+        <li>使用MambaVision（基于Mamba状态空间模型）作为视觉编码器</li>
+        <li>替代传统Transformer架构</li>
+        <li>多触觉数据集对比实验</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>数据集</h2>
+      <p>请通过百度网盘下载，提取码: <strong>f1k8</strong></p>
+      <ul>
+        <li>Calandra触觉数据集</li>
+        <li>TAG触觉数据集</li>
+        <li>obj触觉数据集</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+.project-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--primary) 0%, #2a2a4a 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.project-hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  color: white;
+}
+
+.project-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0 0 2rem 0;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background: white;
+  color: var(--primary);
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.project-content {
+  padding: 0 1rem;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.content-section h2 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.content-section ul {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #444;
+}
+</style>
